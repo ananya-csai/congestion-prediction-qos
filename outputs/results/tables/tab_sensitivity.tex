@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Sensitivity check for Abilene: test intervals in which static routing has MLU $>3$ (demand far above any plausible capacity) are excluded}
+\label{tab:sens}
+\scriptsize
+\begin{tabular}{@{}llcccc@{}}
+\toprule
+Load (excluded intervals) & Method & MLU & Cong.\ (\%) & Loss (\%) & Delay \\
+\midrule
+low (241 excl.) & Static SP & 0.622 & 9.46 & 0.87 & 8.47 \\
+low (241 excl.) & Reactive & 0.607 & 5.97 & 0.54 & 7.13 \\
+low (241 excl.) & Predictive (RF) & 0.606 & 5.72 & 0.54 & 7.14 \\
+low (241 excl.) & Oracle & 0.605 & 4.08 & 0.50 & 6.88 \\
+medium (278 excl.) & Static SP & 0.767 & 30.57 & 1.11 & 11.25 \\
+medium (278 excl.) & Reactive & 0.733 & 19.48 & 0.77 & 9.26 \\
+medium (278 excl.) & Predictive (RF) & 0.733 & 19.34 & 0.79 & 9.31 \\
+medium (278 excl.) & Oracle & 0.728 & 14.41 & 0.74 & 9.06 \\
+high (296 excl.) & Static SP & 0.954 & 70.44 & 2.24 & 22.86 \\
+high (296 excl.) & Reactive & 0.886 & 47.24 & 1.74 & 17.42 \\
+high (296 excl.) & Predictive (RF) & 0.887 & 46.35 & 1.78 & 17.54 \\
+high (296 excl.) & Oracle & 0.878 & 38.28 & 1.72 & 17.19 \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,48 @@
+\begin{table}[t]
+\centering
+\caption{Paired comparison of predictive routing with baselines over test days ($h=1$; difference = predictive $-$ baseline, negative is better; Cong.\ = congested-interval share; pp = percentage points; 95\% bootstrap CI; Wilcoxon signed-rank, Holm-corrected)}
+\label{tab:stats}
+\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}llllcccc@{}}
+\toprule
+Dataset & Load & Baseline & Metric & Mean diff. & 95\% CI & Days & $p_{\mathrm{Holm}}$ \\
+\midrule
+Abilene & low & Reactive & MLU & -0.001 & [-0.002, -0.000] & 34 & 0.019 \\
+Abilene & low & Reactive & Cong.\ (pp) & -0.235 & [-0.429, -0.061] & 34 & 0.079 \\
+Abilene & low & Reactive & Loss (pp) & 0.000 & [-0.008, 0.008] & 34 & 1.000 \\
+Abilene & low & Static SP & MLU & -0.020 & [-0.033, -0.011] & 34 & $<$0.001 \\
+Abilene & low & Static SP & Cong.\ (pp) & -3.607 & [-5.792, -1.746] & 34 & $<$0.001 \\
+Abilene & low & Static SP & Loss (pp) & -0.439 & [-0.733, -0.193] & 34 & 0.013 \\
+Abilene & medium & Reactive & MLU & -0.000 & [-0.001, 0.001] & 34 & 0.992 \\
+Abilene & medium & Reactive & Cong.\ (pp) & -0.133 & [-0.408, 0.133] & 34 & 0.992 \\
+Abilene & medium & Reactive & Loss (pp) & 0.030 & [0.007, 0.060] & 34 & 0.034 \\
+Abilene & medium & Static SP & MLU & -0.037 & [-0.047, -0.028] & 34 & $<$0.001 \\
+Abilene & medium & Static SP & Cong.\ (pp) & -10.776 & [-14.105, -7.589] & 34 & $<$0.001 \\
+Abilene & medium & Static SP & Loss (pp) & -0.394 & [-0.651, -0.171] & 34 & $<$0.001 \\
+Abilene & high & Reactive & MLU & -0.000 & [-0.003, 0.003] & 34 & 0.575 \\
+Abilene & high & Reactive & Cong.\ (pp) & -0.847 & [-1.317, -0.398] & 34 & 0.017 \\
+Abilene & high & Reactive & Loss (pp) & 0.050 & [0.004, 0.101] & 34 & 0.150 \\
+Abilene & high & Static SP & MLU & -0.067 & [-0.079, -0.054] & 34 & $<$0.001 \\
+Abilene & high & Static SP & Cong.\ (pp) & -23.071 & [-27.780, -18.363] & 34 & $<$0.001 \\
+Abilene & high & Static SP & Loss (pp) & -0.469 & [-0.637, -0.304] & 34 & $<$0.001 \\
+G\'EANT & low & Reactive & MLU & -0.000 & [-0.001, 0.001] & 24 & 1.000 \\
+G\'EANT & low & Reactive & Cong.\ (pp) & -0.217 & [-0.434, -0.043] & 24 & 0.543 \\
+G\'EANT & low & Reactive & Loss (pp) & 0.001 & [0.000, 0.003] & 24 & 1.000 \\
+G\'EANT & low & Static SP & MLU & -0.018 & [-0.031, -0.006] & 24 & 0.129 \\
+G\'EANT & low & Static SP & Cong.\ (pp) & -6.727 & [-12.457, -1.953] & 24 & 0.178 \\
+G\'EANT & low & Static SP & Loss (pp) & -0.015 & [-0.046, 0.006] & 24 & 1.000 \\
+G\'EANT & medium & Reactive & MLU & -0.001 & [-0.002, 0.001] & 24 & 1.000 \\
+G\'EANT & medium & Reactive & Cong.\ (pp) & -0.528 & [-1.361, 0.130] & 24 & 1.000 \\
+G\'EANT & medium & Reactive & Loss (pp) & -0.005 & [-0.016, 0.006] & 24 & 1.000 \\
+G\'EANT & medium & Static SP & MLU & -0.065 & [-0.097, -0.036] & 24 & 0.005 \\
+G\'EANT & medium & Static SP & Cong.\ (pp) & -29.357 & [-41.944, -17.423] & 24 & 0.007 \\
+G\'EANT & medium & Static SP & Loss (pp) & -0.142 & [-0.275, -0.036] & 24 & 0.257 \\
+G\'EANT & high & Reactive & MLU & -0.007 & [-0.014, -0.002] & 24 & 0.361 \\
+G\'EANT & high & Reactive & Cong.\ (pp) & -1.049 & [-2.185, -0.094] & 24 & 0.709 \\
+G\'EANT & high & Reactive & Loss (pp) & -0.072 & [-0.186, -0.002] & 24 & 0.657 \\
+G\'EANT & high & Static SP & MLU & -0.151 & [-0.192, -0.113] & 24 & $<$0.001 \\
+G\'EANT & high & Static SP & Cong.\ (pp) & -46.205 & [-54.569, -37.568] & 24 & $<$0.001 \\
+G\'EANT & high & Static SP & Loss (pp) & -0.595 & [-1.026, -0.209] & 24 & 0.060 \\
+\bottomrule
+\end{tabular}
+\end{table}

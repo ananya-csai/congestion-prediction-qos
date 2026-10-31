@@ -1,0 +1,24 @@
+\begin{table}[t]
+\centering
+\caption{Daily F1 of the Random Forest minus daily F1 of each baseline ($h=1$; days without any congested link are excluded; 95\% bootstrap CI; Wilcoxon signed-rank, Holm-corrected per setting)}
+\label{tab:predstats}
+\scriptsize
+\begin{tabular}{@{}lllcccc@{}}
+\toprule
+Dataset & Load & Baseline & Mean diff. & 95\% CI & Days & $p_{\mathrm{Holm}}$ \\
+\midrule
+Abilene & low & Persistence & +0.0031 & [-0.0139, 0.0229] & 26 & 0.935 \\
+Abilene & low & Logistic reg. & +0.1035 & [0.0431, 0.1772] & 26 & 0.005 \\
+Abilene & medium & Persistence & +0.0015 & [-0.0032, 0.0064] & 32 & 0.923 \\
+Abilene & medium & Logistic reg. & +0.0030 & [-0.0033, 0.0085] & 32 & 0.087 \\
+Abilene & high & Persistence & +0.0068 & [0.0030, 0.0110] & 34 & 0.007 \\
+Abilene & high & Logistic reg. & +0.0084 & [0.0034, 0.0142] & 34 & 0.009 \\
+G\'EANT & low & Persistence & -0.0045 & [-0.0234, 0.0085] & 9 & 1.000 \\
+G\'EANT & low & Logistic reg. & -0.0034 & [-0.0638, 0.0386] & 9 & 1.000 \\
+G\'EANT & medium & Persistence & -0.0334 & [-0.1009, 0.0067] & 16 & 0.594 \\
+G\'EANT & medium & Logistic reg. & +0.0296 & [-0.0033, 0.0568] & 16 & 0.021 \\
+G\'EANT & high & Persistence & +0.0027 & [-0.0030, 0.0116] & 24 & 0.794 \\
+G\'EANT & high & Logistic reg. & +0.0333 & [0.0204, 0.0488] & 24 & $<$0.001 \\
+\bottomrule
+\end{tabular}
+\end{table}

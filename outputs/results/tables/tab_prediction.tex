@@ -1,0 +1,30 @@
+\begin{table}[t]
+\centering
+\caption{Congestion prediction on the test period ($h=1$, $\theta=0.8$, seed 42). Persistence outputs only 0/1, so its ROC-AUC and PR-AUC are single-threshold values and are not directly comparable with the probability-based AUCs of the other models}
+\label{tab:pred}
+\scriptsize\setlength{\tabcolsep}{2.5pt}
+\begin{tabular}{@{}lllccccc@{}}
+\toprule
+Dataset & Load & Model & Precision & Recall & F1 & ROC-AUC & PR-AUC \\
+\midrule
+Abilene & low & Persistence & 0.858 & 0.857 & 0.857 & 0.928 & 0.737 \\
+Abilene & low & Logistic reg. & 0.895 & 0.789 & 0.839 & 0.992 & 0.891 \\
+Abilene & low & Random Forest & 0.831 & 0.879 & 0.854 & 0.995 & 0.905 \\
+Abilene & medium & Persistence & 0.857 & 0.856 & 0.857 & 0.926 & 0.738 \\
+Abilene & medium & Logistic reg. & 0.815 & 0.891 & 0.852 & 0.993 & 0.904 \\
+Abilene & medium & Random Forest & 0.847 & 0.876 & 0.861 & 0.995 & 0.931 \\
+Abilene & high & Persistence & 0.883 & 0.883 & 0.883 & 0.937 & 0.788 \\
+Abilene & high & Logistic reg. & 0.901 & 0.867 & 0.884 & 0.993 & 0.939 \\
+Abilene & high & Random Forest & 0.877 & 0.898 & 0.887 & 0.995 & 0.957 \\
+G\'EANT & low & Persistence & 0.859 & 0.859 & 0.859 & 0.929 & 0.738 \\
+G\'EANT & low & Logistic reg. & 0.662 & 0.948 & 0.780 & 1.000 & 0.852 \\
+G\'EANT & low & Random Forest & 0.830 & 0.887 & 0.857 & 1.000 & 0.911 \\
+G\'EANT & medium & Persistence & 0.893 & 0.893 & 0.893 & 0.946 & 0.798 \\
+G\'EANT & medium & Logistic reg. & 0.801 & 0.907 & 0.850 & 0.999 & 0.903 \\
+G\'EANT & medium & Random Forest & 0.897 & 0.887 & 0.892 & 1.000 & 0.958 \\
+G\'EANT & high & Persistence & 0.939 & 0.939 & 0.939 & 0.969 & 0.884 \\
+G\'EANT & high & Logistic reg. & 0.941 & 0.899 & 0.920 & 0.999 & 0.967 \\
+G\'EANT & high & Random Forest & 0.936 & 0.942 & 0.939 & 0.999 & 0.983 \\
+\bottomrule
+\end{tabular}
+\end{table}
