@@ -1,0 +1,10 @@
+# large or regenerated files
+data/*.csv
+outputs/*_h*_th*_s*/
+outputs/run_all.log
+outputs/train_*.log
+__pycache__/
+*.pyc
+.venv/
+venv/
+.DS_Store

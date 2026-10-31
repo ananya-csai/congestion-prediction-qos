@@ -1,0 +1,26 @@
+{
+  "_comment": "Reduced grid (simple lab paper): 1 seed, h=1, three loads, two networks. Set 'extra_horizon' and 'feature_ablation' to enable optional runs. Reduced run (user request): 1 RF seed, no feature-group ablation.",
+  "datasets": [
+    "abilene",
+    "geant"
+  ],
+  "theta": 0.8,
+  "alpha": 5.0,
+  "margin": 0.1,
+  "seeds": [
+    42
+  ],
+  "loads": {
+    "low": 0.8,
+    "medium": 1.0,
+    "high": 1.25
+  },
+  "main_horizon": 1,
+  "extra_horizon": null,
+  "feature_ablation": {
+    "load": "medium",
+    "horizon": 1,
+    "seed": 42,
+    "variants": {}
+  }
+}
